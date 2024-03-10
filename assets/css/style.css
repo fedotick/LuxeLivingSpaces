@@ -7,8 +7,8 @@ body {
 }
 
 form {
-    width: 720px;
-    padding: 96px 98px;
+    width: 564px;
+    padding: 96px 98px 100px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -36,7 +36,7 @@ form {
 }
 
 .input:not(:last-child) {
-    margin-right: 32px; 
+    margin-right: 24px; 
 }
 
 label {
