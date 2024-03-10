@@ -6,54 +6,55 @@ body {
     margin: 0;
 }
 
-.form {
+form {
     width: 720px;
     padding: 96px 98px;
     background-color: rgb(255, 255, 255);
 }
 
-.username {
-    display: flex;
-    flex-direction: column;
-    grid-gap: 8px;
-}
-
-.input-text-label {
+label {
+    display: block;
     font-weight: 600;
     font-size: 12px;
     line-height: 18px;
     color: rgb(102, 102, 102);
 }
 
-.input-field {
+input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 8px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
     padding: 16px;
     border-radius: 8px;
     border: 1px solid rgb(204, 204, 204);
 }
 
-.input-field::placeholder {
+input[type="text"]::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: rgb(102, 102, 102);
 }
 
-.input-field:focus {
+input[type="text"]:focus {
     outline: 2px solid rgb(122, 92, 250);
 }
 
-.assistive-text {
+input[type="text"] + label {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
     color: rgb(102, 102, 102);
 }
 
-.input-field:invalid {
+input[type="text"]:invalid {
     border: 1px solid rgb(235, 87, 87); 
 }
 
-.input-field:focus:invalid {
+input[type="text"]:focus:invalid {
     outline: 2px solid rgb(235, 87, 87); 
 }
 
