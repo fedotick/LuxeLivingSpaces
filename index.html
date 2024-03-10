@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBLab11</title>
+    <link rel="shortcut icon" href="assets/img/logo-white.png" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form id="" onsubmit="">
+        <div class="section">
+            <h2>Локация</h2>
+            <div class="inputs">
+                <div class="input">
+                    <label for="district">Район</label>
+                    <select id="district" name="district" required>  
+                        <option value="" selected="selected">Выберите</option>
+                        <option value="airport">Аэропорт</option>
+                        <option value="botanika">Ботаника</option>
+                        <option value="buyukany">Буюканы</option>
+                        <option value="durlesti">Дурлешты</option>
+                        <option value="ryshkanovka">Рышкановка</option>
+                        <option value="skulyanka">Скулянка</option>
+                        <option value="stara_pochta">Старая Почта</option>
+                        <option value="telecentr">Телецентр</option>
+                        <option value="center">Центр</option>
+                        <option value="chokana">Чокана</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="address">Адрес</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Стоимость</h2>
+            <div class="inputs">
+                <div class="input">
+                    <label for="price">Цена</label>
+                    <input type="number" id="price" name="price" required min="0" max="99999999">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Характеристики</h2>
+            <div class="inputs">
+                <div class="input">
+                    <label for="totalArea">Общая площадь, м<sup>2</sup></label>
+                    <input type="number" id="totalArea" name="totalArea" required min="0" max="99999">
+                </div>
+                <div class="input">
+                    <label for="livingArea">Жилая площадь, м<sup>2</sup></label>
+                    <input type="number" id="livingArea" name="livingArea" required min="0" max="99999">
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="input">
+                    <label for="layout">Планировка</label>
+                    <select id="layout" name="layout" required>  
+                        <option value="">Выберите</option>
+                        <option value="102">102</option>
+                        <option value="135">135</option>
+                        <option value="143">143</option>
+                        <option value="brezhnevka">Брж (Брежневка)</option>
+                        <option value="varnitskaya">Варц (Варницкая)</option>
+                        <option value="gostinka">Гостинка</option>
+                        <option value="individual">Индивидуальная</option>
+                        <option value="small-family">Малосемейная</option>
+                        <option value="mold-series">Мс (Молд. Серия)</option>
+                        <option value="on-ground">На земле</option>
+                        <option value="rubashka">Рубашка</option>
+                        <option value="stalinka">Ст (Сталинка)</option>
+                        <option value="khrushchyovka">Хрущевка</option>
+                        <option value="cheshka">Чш (Чешка)</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="rooms">Количество комнат</label>
+                    <select id="rooms" name="rooms" required>
+                        <option value="">Выберите</option>
+                        <option value="room">Комната</option>
+                        <option value="1-room">1-комнатная квартира</option>
+                        <option value="2-room">2-х комнатная квартира</option>
+                        <option value="3-room">3-х комнатная квартира</option>
+                        <option value="4-or-more-room">4-x комн. квартиры</option>
+                        <option value="5-or-more-room">5-ти комн. кварт. и более</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="input">
+                    <label for="balconies">Количество балконов</label>
+                    <select id="balconies" name="balconies" required>  
+                        <option value="">Выберите</option>
+                        <option value="no-balcony">Нет</option>
+                        <option value="one-balcony">1</option>
+                        <option value="two-balconies">2</option>
+                        <option value="three-balconies">3</option>
+                        <option value="four-or-more-balconies">4 и более</option>  
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="bathrooms">Количество санузлов</label>
+                    <select id="bathrooms" name="bathrooms" required>
+                        <option value="">Выберите</option>
+                        <option value="one-bathroom">1</option>
+                        <option value="two-bathrooms">2</option>
+                        <option value="three-bathrooms">3</option>
+                        <option value="four-or-more-bathrooms">4 и более</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="input">
+                    <label for="floor">Этаж</label>
+                    <select id="floor" name="floor" required>  
+                        <option value="">Выберите</option> 
+                        <option value="basement">Подвал</option>   
+                        <option value="ground-floor">Цоколь</option>   
+                        <option value="1">1</option>   
+                        <option value="2">2</option>   
+                        <option value="3">3</option>   
+                        <option value="4">4</option>   
+                        <option value="5">5</option>   
+                        <option value="6">6</option>   
+                        <option value="7">7</option>   
+                        <option value="8">8</option>   
+                        <option value="9">9</option>   
+                        <option value="10">10</option>   
+                        <option value="11">11</option>   
+                        <option value="12">12</option>   
+                        <option value="13">13</option>   
+                        <option value="14">14</option>   
+                        <option value="15">15</option>   
+                        <option value="16">16</option>   
+                        <option value="17">17</option>   
+                        <option value="18">18</option>   
+                        <option value="19">19</option>   
+                        <option value="20">20</option>   
+                        <option value="21">21</option>   
+                        <option value="22">22</option>   
+                        <option value="23">23</option>   
+                        <option value="24">24</option>   
+                        <option value="25">25</option>   
+                        <option value="penthouse">Пентхаус</option>   
+                        <option value="mansard">Мансарда</option>  
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="floorsTotal">Этажность</label>
+                    <input type="number" id="floorsTotal" name="floorsTotal" required min="1" max="25">
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="input">
+                    <label for="buildingType">Новострой/вторичное жилье</label>
+                    <select id="buildingType" name="buildingType" required>
+                        <option value="">Выберите</option>
+                        <option value="new">Новострой</option>
+                        <option value="secondary">Вторичное жилье</option>
+                    </select>
+                </div>
+                <div class="input"></div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Дополнительно</h2>
+            <div class="inputs">
+                <div class="input">
+                    <input type="checkbox" id="phone" name="phone">
+                    <label for="phone">Наличие телефона</label>
+                </div>
+                <div class="input">
+                    <input type="checkbox" id="internet" name="internet">
+                    <label for="internet">Наличие интернета</label>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Описание и контакты</h2>
+            <div class="inputs">
+                <div class="input">
+                    <label for="image">Загрузка картинки</label>
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="input">
+                    <label for="description">Описание</label>
+                    <textarea id="description" name="description"></textarea>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="input">
+                    <label for="contactPhone">Контактный телефон</label>
+                    <input type="tel" id="contactPhone" name="contactPhone" required pattern="(0\d{8}|\+373\d{8})">
+                </div>
+                <div class="input">
+                    <label for="email">Адрес электронной почты</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="inputs">
+                <div class="input">
+                    <button type="reset">Очистить</button>
+                </div>
+                <div class="input right">
+                    <button class="recommended" type="submit">Добавить</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
